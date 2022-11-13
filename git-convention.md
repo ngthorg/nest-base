@@ -165,8 +165,8 @@ body-leading-blank
 
 ```diff
 # warning
-- git commit -m "fix: some message
-- This is message body."
+! git commit -m "fix: some message
+! This is message body."
 # passes
 + git commit -m "fix: some message
 +
@@ -198,8 +198,8 @@ footer-leading-blank
 
 ```diff
 # warning
-- git commit -m "fix: some message
-- BREAKING CHANGE: This is message footer"
+! git commit -m "fix: some message
+! BREAKING CHANGE: This is message footer"
 # passes
 + git commit -m "fix: some message
 +
@@ -343,18 +343,6 @@ npm i -D validate-branch-name
 pattern: "^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$"
 errorMsg: 'Branch name validate failed please rename your current branch'
 ```
-
-**Default pattern: ^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
-
-**Example:** `feature/test/pattern-test` would be passed.
-
-**Avaliable patterns:**
-
-- `^(feature|fix|hotfix|release)\/.+` - branch has to start with _feature/, fix/, release/ or hotfix/_
-
-- `(feature|release|hotfix)\/(JIRA-\d+)` - it should look like _feature/JIRA-1234_
-
-- `(feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+` - it should look like _feature/branch-name_ or include JIRA's code like _feature/JIRA-1234/branch-name_
 
 Define pre-commit file under .husky direcotory.
 
