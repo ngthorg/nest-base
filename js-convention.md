@@ -129,21 +129,7 @@ Naming Booleans
   const isEnabled = false;
   ```
 
-### Class
-
-### interface
-
-### type
-
-### enum
-
-### decorator
-
-### type parameters
-
-## Examples
-
-Variable and Function
+### Variable and Function
 
 - Use `camelCase` for variable and function names
 
@@ -161,7 +147,7 @@ Variable and Function
   function barFunc() {}
   ```
 
-Class
+### Class
 
 - Use `PascalCase` for class names.
 
@@ -199,7 +185,7 @@ Class
   }
   ```
 
-Interface
+### Interface
 
 - Use `PascalCase` for name.
 
@@ -225,7 +211,7 @@ Interface
   interface Foo {}
   ```
 
-Type
+### Type
 
 - Use `PascalCase` for name.
 
@@ -235,7 +221,7 @@ Type
 
   > Reason: Similar to [class]
 
-Namespace
+### Namespaces
 
 - Use `PascalCase` for names
 
@@ -253,7 +239,7 @@ Namespace
   namespace Foo {}
   ```
 
-Enum
+### Enum
 
 - Use `PascalCase` for enum names
 
@@ -291,7 +277,7 @@ Enum
   }
   ```
 
-Null vs. Undefined
+### Null vs. Undefined
 
 - Prefer not to use either for explicit unavailability
 
@@ -339,7 +325,7 @@ Null vs. Undefined
   if (error != null) // rules out both null and undefined
   ```
 
-Quotes
+### Quotes
 
 - Prefer single quotes (') unless escaping.
 
@@ -350,21 +336,21 @@ Quotes
 - When you can't use double quotes, try using back ticks (`).
   > Reason: These generally represent the intent of complex enough strings.
 
-Spaces
+### Spaces
 
 - Use 2 spaces. Not tabs.
   > Reason: More JavaScript teams do this (e.g. `airbnb`, `idiomatic`, `standard`, `npm`, `node`, `google/angular`, `facebook/react`). The TypeScript/VSCode teams use 4 spaces but are definitely the exception in the ecosystem.
 
-Semicolons
+### Semicolons
 
 - Use semicolons.
 
-Array
+### Array
 
 - Annotate arrays as foos: `Foo[]` instead of foos: `Array<Foo>`.
   > Reasons: It's easier to read. It's used by the TypeScript team. Makes easier to know something is an array as the mind is trained to detect `[]`.
 
-Filename
+### Filename
 
 - Name files with `camelCase`. E.g. `utils.ts`, `map.ts` etc.
   > Reason: Conventional across many JS teams.
@@ -407,9 +393,9 @@ type vs. interface
 [namespaces]: #enum 'Namespaces'
 [decorator]: #decorator 'Decorator'
 [type parameters]: #type-parameters 'Type Parameters'
-[variable]: #decorator 'Variable'
+[variable]: #variable-and-function 'Variable'
 [parameter]: #decorator 'Parameter'
-[function]: #decorator 'Function'
+[function]: #variable-and-function 'Function'
 [method]: #decorator 'Method'
 [property]: #decorator 'Property'
 [module]: #decorator 'Module'
