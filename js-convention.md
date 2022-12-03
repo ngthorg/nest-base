@@ -1,4 +1,4 @@
-# TypeScript Conventional
+# TypeScript Convention
 
 ## Introduce
 
